@@ -11,7 +11,12 @@ it should have a deleteTodo method
 //	todos: ["item 1","item 2","item 3"] //When you setting the value of property you do not end the value with a semicolumn
 //	
 //};
+//This will store the list in an array
 var todoList = {
-	todos: ["item 1","item 2","item 3"]
+	todos: ["item 1","item 2","item 3"],
+	displayTodos: function() {
+	console.log("My Todos:",this.todos);
+	}
+
 };
-//hey its 
+
