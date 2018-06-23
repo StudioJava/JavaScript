@@ -50,8 +50,39 @@ function sayName(a){ //a is your parameter also called access point.
 
 
 
+//What is an object?
+/*
+You use objects to group related data and function together.
+example:
+Computer:
+operating system, screen size, purchaseYear, memory etc
+var myComputer {
+Properties separated by comas,
+opearatingSystem: "mac",
+screenSize: "15 inches",
+purchaseYear: 2011
+}
+*/
+var myComputer = {
+		operatingSystem: "mac",
+		screenSize: "15 inches",
+		purchaseYear: 2011
+		
+}
+//To obtain each individual item myComputer.operatingSystem
 
+myComputer.operatingSystem
 
+// OBJECTS AND FUNCTIONS
+var person = {
+	name: "Gordon",
+	sayName: function(){// syName is a method on the person object
+		console.log(this.name);
+	}
+}
+//sayName: function() this is a unanimous fuction , when you have a function on an object no need to give a name, this will refer to the property in the ojcts
+
+//METHOD IS A PROPERTY THAT IS EQUAL TO A FUNCTION
 
 
 
