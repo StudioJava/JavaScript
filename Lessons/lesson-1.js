@@ -21,7 +21,7 @@ function makeTurkeySandwich(){
 // function sayHiTo (personName is your parameter-variable)
 function sayHiTo (personName) {
 	console.log("hi",personName );//your paramenter variable is repeated here.
-}
+}//commet
 sayHiTo();
 makeTurkeySandwich();
 //CREATE A FUNCION TO DISPLAY, TO ADD, TO CHANGE, TO DELETE
