@@ -27,6 +27,7 @@ var todoList = {
 
 };
 //Relationship between objects and functions
+//method is a property equal to a function
 var edgar = {
 	name:"Edgar", //this is property
 	sayName: function(){//no need to name the function you'll call it my the name of property
