@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javaScript Basic</title>
+</head>
+
+<body>
+	<h1>First-choice Haircutters</h1>
+	<h3>We make you feel good!!</h3>
+	<h5 >Haircut Cost: <span id="cost">$5</span>  Special</h5>
+	
+	<script>
+		var price;
+		var quatity;
+		var total;
+		
+		price = 5;
+		quatity = 4;
+		total = price * quatity;
+		
+		var el = document.getElementById("cost");
+		el.textContent = "$" + total;
+//	var today = new Date();
+//	var hourNow = today.getHours();
+//	var greeting;
+//		
+//	if(hourNow > 18){
+//		greeting = "Good Evening!";
+//	}
+//		else if(hourNow > 12){
+//			greeting = "Good Afternoon!";
+//		}
+//		else if(hourNow > 0){
+//			greeting = "Good Morning!";
+//		}
+//		else{
+//			greeting = "Welcome";
+//		}
+//		document.write("<h3>" + greeting +"</h3>");
+	</script>
+</body>
+</html>
