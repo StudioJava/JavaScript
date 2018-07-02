@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz App</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+<script>
+alert("Welcom to Quiz-App");	
+var remainder = 5;
+var correct = 0;
+var incorrect = 0;
+var correctGuess = false;
+
+var questionOne = prompt("Where is California located in the us?\n1. North\n2. East\n3. West");
+	questionOne = questionOne.toUpperCase();
+	if (questionOne == 3 || questionOne ==="WEST"){
+		correctGuess = true;
+		remainder+=(-1);
+		correct += 1;
+		alert("Congrats!!! " + "\n[" + remainder + "]" + " questions remaining "+"\nCorrect " + correct+"\nIncorrect " + incorrect);
+	}else{
+		remainder+=(-1);
+		incorrect +=(-1);
+		alert("Sorry!!!" + "\n[" + remainder + "]" + " questions remaining "+"\nCorrect " + correct+"\nIncorrect " + incorrect );
+	}
+
+var questionTwo = prompt("Where is New York located in the US?\n1. North\n2. East\n3. West" );
+	questionTwo = questionTwo.toUpperCase();
+	if(questionTwo == 2 || questionTwo ==="EAST"){
+		remainder+=(-1);
+		correct += 1;
+		alert("Congrats!!! " + "\n[" + remainder + "]" + " questions remaining "+"\nCorrect " + correct+"\nIncorrect " + incorrect);
+	}else{
+		remainder+=(-1);
+		incorrect +=(-1);
+		alert("Sorry!!!" + "\n[" + remainder + "]" + " questions remaining "+"\nCorrect " + correct+"\nIncorrect " + incorrect );
+	}
+
+var questionThree = prompt("Where is Texas located in the US?\n1. North\n2. East\n3. South");
+	questionThree = questionThree.toUpperCase();
+	 if(questionThree == 3 || questionThree === "SOUTH"){
+		remainder+=(-1);
+		correct += 1;
+		alert("Congrats!!! " + "\n[" + remainder + "]" + " questions remaining "+"\nCorrect " + correct+"\nIncorrect " + incorrect); 
+	 }else{
+		remainder+=(-1);
+		incorrect +=(-1);
+		alert("Sorry!!!" + "\n[" + remainder + "]" + " questions remaining "+"\nCorrect " + correct+"\nIncorrect " + incorrect );
+	}
+
+var questionFour = prompt("Where is Montana located in the US?\n1. North\n2. East\n3. South");
+	questionFour = questionFour.toUpperCase();
+	if(questionFour == 1 || questionFour === "NORTH"){
+	remainder+=(-1);
+		correct += 1;
+		alert("Congrats!!! " + "\n[" + remainder + "]" + " questions remaining "+"\nCorrect " + correct+"\nIncorrect " + incorrect); 	
+	}else{
+		remainder+=(-1);
+		incorrect +=(-1);
+		alert("Sorry!!!" + "\n[" + remainder + "]" + " questions remaining "+"\nCorrect " + correct+"\nIncorrect " + incorrect );
+	}
+	
+var questionFive = prompt("Where is Oregon located in the us?\n1. North\n2. East\n3. West");
+	questionFive = questionFive.toUpperCase();
+	if(questionFive == 3 || questionFive === "WEST"){
+		remainder+=(-1);
+		correct += 1;
+		alert("Congrats!!! " + "\n[" + remainder + "]" + " questions remaining "+"\nCorrect " + correct+"\nIncorrect " + incorrect); 
+	}else{
+		remainder+=(-1);
+		incorrect +=(-1);
+		alert("Sorry!!!" + "\n[" + remainder + "]" + " questions remaining "+"\nCorrect " + correct+"\nIncorrect " + incorrect );
+	}	
+	
+	
+	if(correct == 5){
+		alert("You got the Gold Crown with " + correct + " answers!!!");
+	}
+	else if(correct >=3 && correct <= 4){
+		alert("You got the Silver Crown with " + correct + " answers!!!");
+	}
+	else if (correct >=1 && correct <= 2){
+		alert("You got the Bronze Crown with " + correct + " answers!!!");
+	}
+	else{
+		alert("You got NO Crown with " + correct + " answers!!!");
+	
+	}
+		
+		
+
+</script>
+</body>
+</html>
