@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Quiz App</title>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
 <body>
@@ -12,12 +11,10 @@ alert("Welcom to Quiz-App");
 var remainder = 5;
 var correct = 0;
 var incorrect = 0;
-var correctGuess = false;
 
 var questionOne = prompt("Where is California located in the us?\n1. North\n2. East\n3. West");
 	questionOne = questionOne.toUpperCase();
 	if (questionOne == 3 || questionOne ==="WEST"){
-		correctGuess = true;
 		remainder+=(-1);
 		correct += 1;
 		alert("Congrats!!! " + "\n[" + remainder + "]" + " questions remaining "+"\nCorrect " + correct+"\nIncorrect " + incorrect);
