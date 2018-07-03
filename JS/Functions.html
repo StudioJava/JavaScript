@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Functions</title>
+</head>
+
+<body>
+	<script>
+		function alertRandom(){
+			var randomNumber = Math.floor(Math.random() * 6 )+1;
+			alert(randomNumber);
+		}
+		
+		function getRandomNumberWithParameters(max,min){
+			if(isNaN(max) || isNaN(min) ){
+				throw new Error("error this is wrong");
+			}else{
+				var randomNumber = Math.floor(Math.random() * (max - min + 1) )+min;
+			return randomNumber;
+			}
+			
+		}
+		
+	/* 
+	Function Expression
+	End with a semicolumn at end of bracket
+	*/
+		var randomNumber = function(){
+			var randomNumber = Math.floor(Math.random() * 6 )+1;
+			alert(randomNumber);
+		};
+		
+				
+//alertRandom(); //Call the function	
+		
+		//RETURNING A VALUE
+		function getRandomNumber(){
+			var randomNumber = Math.floor(Math.random() * 6 )+1;
+			return randomNumber;
+		}
+		//alert(getRandomNumber());
+		//console.log(getRandomNumber());
+		//var diceRoll = getRandomNumber();
+		
+		//function to check if email field is empty
+		function isEmailEmpty(){
+			var field = document.getElementById("email");
+			if(field.value === ""){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		//****************
+		function getYear(){
+			var year = new Date().getFullYear();
+			return year;
+		}
+		function calcArea(width, length, unit){
+			return width * length + unit;
+		}
+		//alert(calcArea(4,5," ft"));
+	</script>
+</body>
+</html>
