@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Loops Arrays &amp; Objects</title>
+</head>
+
+<body>
+	<script>
+	/* 
+	Understanding the while loop
+	while the condition is met or true it will run
+	var counter = 1;
+    while ( counter <= 10 ) {
+    console.log(counter);
+    counter += 1;
+}
+	*/
+		function randomNumber(upper){
+			return Math.floor(Math.random() * upper) + 1;
+		}
+		var counter = 1;
+		while(counter <= 10){
+			  var randNum = randomNumber(6);
+			document.write( "counter "+ counter +" = " + randNum +  "<br>");
+			  counter += 2;
+			  }
+	
+	</script>
+</body>
+</html>
