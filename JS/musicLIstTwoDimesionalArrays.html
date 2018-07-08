@@ -7,26 +7,27 @@
 </head>
 <body>
     <script>
-      var playList = [
-          ["My Way","Frank Sinatra"],
-          ["Respect","Aretha Frankling"],
-          ["Imagine","John Lennon"],
-          ["Born to Run","Bruce Spring"],
-          ["Louie Louie", "The Kingsmaer"],
-          ["Maybellene", "Chuck Berry"]
-      ] 
-      function print(messge){
-          document.write(messge);
-      } 
-      function orderedList(){
-          listHTML = "<ol>";
-            for(var i = 0; i < 10; i++){
-                listHTML += "<li>" + "message" + "</li>";
+      var playlist = [
+        ['I Did It My Way','Frank Sinatra'],
+        ['Respect','Aretha Frnaklin'],
+        ['Imagine','John Lennon'],
+        ['Born to Run','Bruce Spring'],
+        ['Louie Louie','The Kingsman'],
+        ['Maybellene','Chuck Berry']
+        ];
+      function print(message){
+            document.write(message);
+        }
+        function printList(list){
+            var listHTML = "<ol>";
+            for(var i = 0;i < list.length;i++){
+                listHTML += "<li>" + list[i][0] + " by " +list[i][1] + "</li>";
             }
             listHTML += "</ol>";
             print(listHTML);
-      }
-   document.write(orderedList());
+
+        }
+        printList(playlist);
     </script>
 </body>
 </html>
