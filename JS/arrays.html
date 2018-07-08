@@ -7,22 +7,46 @@
 </head>
 <body>
     <script>
-    var shoppingList = [
-        "carrots",
-         "milk", 
-         "potatoes"];
+    var students = [
+        "Mike",
+         "Merry", 
+         "Jon",
+         "Tylor",
+         "Albert"];
+         function print(message){
+             document.write(message);
+         }
+        function printList(list){
+            var listHTML = "<ol>";
+            for( var i = 0; i < list.length; i ++){
+                listHTML += "<li>" + list[i]+"</li>";
+            }
+            listHTML += "</ol>";
+            print(listHTML);
+        }
+        printList(students);
+        var rowList = students.join("<br>");
+        document.write(rowList);
+        var graduatedStudents = ["Sam","Alex","Tony"];
+        var allStudents = students.concat(graduatedStudents);
+        document.write(allStudents);
+        // index of method
+        var fruit = ["Apple","Oragne","Banana","Berrys"];
+        var position = fruit.indexOf("Banana");
+        document.write("<br>" + position);
+
          //
         //  console.log(shoppingList[1]);
         //  shoppingList.push("eggs");
       
-         document.write(shoppingList.length);
-         shoppingList.push("update fruit");
-         document.write(shoppingList.length);//adding elements to the beginning of the array
-         shoppingList.unshift("bananas","chips","tomatoes");
-         document.write(shoppingList);
-         for(var i = 0; i < shoppingList.length;i++){
-             document.write("Item "+ i + " = " + shoppingList[i] + "<br>");
-         }
+        //  document.write(shoppingList.length);
+        //  shoppingList.push("update fruit");
+        //  document.write(shoppingList.length);//adding elements to the beginning of the array
+        //  shoppingList.unshift("bananas","chips","tomatoes");
+        //  document.write(shoppingList);
+        //  for(var i = 0; i < shoppingList.length;i++){
+        //      document.write("Item "+ i + " = " + shoppingList[i] + "<br>");
+        //  }
 
 
     </script>
