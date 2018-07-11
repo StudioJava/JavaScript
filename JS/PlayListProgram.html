@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var playlist = [
+        'I Did It My Way',
+        'Respect',
+        'Imagine',
+        'Born to Run',
+        'Louie Louie',
+        'Maybellene'
+        ];
+        function print(message){
+            document.write(message);
+        }
+        function printList(list){
+            var listHTML = "<ol>";
+            for(var i = 0;i < list.length;i++){
+                listHTML += "<li>" + list[i] + "</li>";
+            }
+            listHTML += "</ol>";
+            print(listHTML);
+
+        }
+        printList(playlist);
+    </script>
+</body>
+</html>
