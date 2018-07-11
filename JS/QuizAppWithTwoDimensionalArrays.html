@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var questions = [
+         ['How many states in the US','50'],
+         ['What is the color of mars','red'],
+         ['On what month is x-mas celebrated?','december']
+
+     ]; 
+     function print(message){
+            document.write(message);
+        }
+        function printList(list){
+            var listHTML = "<ol>";
+            for(var i = 0;i < list.length;i++){
+                listHTML += "<li>" + list[i] + "</li>";
+            }
+            listHTML += "</ol>";
+            print(listHTML);
+
+        }
+     var i;
+     var correct = [];
+     var incorrect = [];
+
+     do{
+        var questOne = prompt(questions[0][0]);
+        var questTwo = prompt(questions[1][0]);
+        var questThree = prompt(questions[2][0]);
+
+     }while(i < questions.length){
+       if(questOne === questions[0][1]){
+          correct.push(questions[0][0]);
+       }else{
+           incorrect.push(questions[0][0]);
+
+       }
+       document.write(print(correct)); 
+
+     }
+    </script>
+</body>
+</html>
