@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <h1>Program to find a random number between 1 and your choice</h1>
+          
+            <input id="user-input" type="text" placeholder="Enter Number"><br>
+            <p id="display"></p>
+           <button onclick="myFunction()"></button>
+        </div>
+    </div>
+    <script>
+        var input = document.getElementById('user-input').value;
+   function myFunction(input){
+       document.getElementById('display').innerHTML = Math.floor(Math.random() * parseInt.input) + 1;
+
+   }
+ 
+    </script>
+</body>
+</html>
