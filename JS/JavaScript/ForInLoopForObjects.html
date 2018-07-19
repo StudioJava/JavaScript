@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="" id="output">
+
+    </div>
+    <script>
+        /* 
+        for (var prop in person) {
+        console.log(prop, ': ', person[prop]);
+        }
+        */
+        function print(message){
+          var div = document.getElementById('output');
+          div.innerHTML = message;
+      } 
+        var person = {
+          name: "Sarah",
+          country: "US",
+          age: 35,
+          student: true,
+          skills: ['javaScript','HTML','CSS']
+
+      }; 
+      person.graduation = 1979;
+      var dealership = {
+          hondaBrand: ["Civic","CRV","Pilot","Acura"],
+          location: "California",
+          discountPercent: 10,
+          online: true,
+         
+
+      };
+      for ( var key in dealership){
+          console.log(key, ': ', dealership[key]);
+      }
+      
+      for (var prop in person) {
+ console.log(prop, ': ', person[prop]);
+}
+      
+
+    </script>
+</body>
+</html>

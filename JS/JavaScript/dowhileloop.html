@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         function randomNumberOne(max){
+//            return  Math.floor(Math.random()* max ) + 1;
+//         }
+        
+//        var playlist = [];
+//        playlist.push('I did it my way');
+//        playlist.push('Respect','Imagine');
+//        playlist.unshift('Born to run');
+//        playlist.unshift('Yellow submarine');
+//       var oldStudents = ['Ellen','Brian','Thomas','Erik'];
+//       var studets = ['Tony','Mark','Jenn','Tobby','Mike'];
+//       for(var i = 0;i < studets.length;i++){
+         
+//       }
+//        function printList( list ) {
+//   var listHTML = '<ol>';
+//   for (var i = 0; i < list.length; i += 1) {
+//     listHTML += '<li>' + list[i] + '</li>';
+//   }
+//   listHTML += '</ol>';
+//   print(listHTML);
+// }
+// function printHorizontalList(list){
+//   var x = list.join(', ');
+//   document.write(x);
+// }
+// function together(listOne,listTwo){
+//     var allStudents = listOne.concat(listTwo);
+//     printList(allStudents);
+// }
+
+// printList(studets);
+// function print(html) {
+//   document.write(html);
+// }
+// printHorizontalList(studets);
+// together(studets,oldStudents);
+
+//++++++++++++
+var inStock = [ 'apples', 'eggs', 'milk', 'cookies', 'cheese', 'bread', 'lettuce', 'carrot', 'broccoli', 'pizza', 'potato', 'crackers', 'onion', 'tofu', 'frozen dinner', 'cucumber'];
+var search;
+
+function print(message) {
+  document.write( '<p>' + message + '</p>');
+}
+while(true){
+    search = prompt("search for a product, type 'List' for all item, 'quit' to exit");
+    if(search === 'quit'){
+        break;
+    }else if(search === 'list'){
+        print(inStock.join(", "));
+    }else{
+        if(inStock.indexOf(search) > 1){
+            print('Yes, we have ' + search + ' in the store.');
+        }else{
+            print(search + ' is not in stock. ');
+        }
+    }
+}
+
+        
+
+        // do{ var guessNumber = prompt('Guess a number between 1 and 4?');
+        // }while(guessNumber != randomNumberOne(3)){
+        //     alert('You guessed correct!!!!')
+        // }
+    
+
+    //*************
+//    var counter = 1;
+//    while(counter <=10) {
+//        var randomInt = randomNumberOne(6);
+//        document.write(counter + ' =  ' +  randomInt+ '<br>');
+//        counter++;
+//        if(randomInt == 6){
+//            alert('you hit number 6 at integer number' + counter);
+//        }
+//    }
+    </script>
+</body>
+</html>

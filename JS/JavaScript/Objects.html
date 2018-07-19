@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output">
+
+    </div>
+
+
+
+    <script>
+    var person = {
+        name: 'Dave',
+        country: 'US',
+        age: 35,
+        student: true,
+        skills: ['JavaScript','HTML','CSS']
+
+    };
+    function print(message){
+        var div = document.getElementById('output');
+        div.innerHTML = message;
+    }
+    var message = '<p>Hello. My name is ' + person.name + '</p>';
+    message += '<p>I live in the ' + person.country + '</p>';
+    message += person.skills.join(', ') + '</p>';
+    print(message);
+    /*alert(person.name);
+    person.country = 'Brazil';
+    alert(person.country);*/
+
+    </script>
+</body>
+</html>

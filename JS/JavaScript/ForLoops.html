@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+   <script>
+    // var html = '<ol>';
+    // for(var i =1;i <= 10;i += 1){
+    //     html += '<li>' + 'This is the result ' + i + '</li>';
+    // }
+    
+    // document.write(html);
+
+/*
+Requirements V1 
+it should have a place to store todos
+it should have a way to display todos
+it should have a way to add todos
+it should have a way to change todos
+it should have a way to delete
+*/
+var todos = ['item 1', 'item 2','item 3'];
+console.log(todos);
+todos.push('item 4');
+todos[2] = 'new item updated';
+todos.unshift();//delete the first item
+todos.pop();//delete the last item
+todos.splice(0,1);//delete item at specific location
+/* 
+it should have a function to display todos
+it should have a function to add todos
+it should have a function to change todos
+it should have a function to delete todos
+*/
+function displayItems(){
+console.log('this is my List: ', todos);
+}
+function addItems(item){
+    todos.push(item);
+    displayItems();
+}
+function changeItem(position,item){
+    todos[position] = item;
+    displayItems();
+}
+function deleteItem(position){
+    todos.splice(position,1);
+    displayItems();
+}
+/*
+OBJECTS
+*/
+  
+    </script> 
+</body>
+</html>

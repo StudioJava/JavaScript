@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output">
+
+    </div>
+    <script>
+        var students = [
+            {name: 'Jerry',
+            track: 'IOS',
+            achievements: 12,
+            points: 4500
+        },
+            {name: 'Allen',
+            track: 'Web design',
+            achievements: 23,
+            points: 1200
+
+            },
+            {name: 'Susan',
+            track: 'Front End Development',
+            achievements: 56,
+            points: 5600
+            },
+            {name: 'Alexis',
+            track: 'IOS',
+            achievements: 43,
+            points: 89854
+        
+             },
+             {name: 'Jon',
+             track: 'Web Design',
+             achievements: 42,
+             points: 10456
+            
+            }
+        ];
+       
+  var message = '';
+  var student;
+  function print(message){
+        var div = document.getElementById('output');
+        div.innerHTML = message;
+    }
+    /*
+    for (var i = 0; i < students.length;i++){
+        student = students[i];
+        message += '<h2> Student: ' + student.name + '</h2>';
+        message += '<p> Name: ' + student.name + '</p>';
+        message += '<p> Track: ' + student.track + '</p>';
+        message += '<p> Achievement: ' + student.achievements + '</p>';
+        message += '<p> Points: ' + student.points + '</p>';
+    }
+    print(message);
+*/
+function getStudentReport(student){
+        var report = '<h2> Student: ' + student.name + '</h2>';
+        report += '<p> Name: ' + student.name + '</p>';
+        report += '<p> Track: ' + student.track + '</p>';
+        report += '<p> Achievement: ' + student.achievements + '</p>';
+        report += '<p> Points: ' + student.points + '</p>';
+        return report;
+}
+var search;
+while (true){
+    search = prompt('Enter a student name to search?');
+    if(search === null || search.toLocaleLowerCase() === 'quit'){
+        break;
+    }
+    for (var i = 0; i < students.length;i++){
+        student = students[i];
+        if(student.name === search){
+            message = getStudentReport(student);
+            print(message);
+
+        }
+    }
+}
+    </script>
+</body>
+</html>

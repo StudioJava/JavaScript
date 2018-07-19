@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // function sayGreeting(greeting){
+    //     var response = prompt("What's your name?");
+    //     alert(greeting +" "+ response + "!");
+    // }
+    // sayGreeting("Hey, good morning");
+
+    // function add(a,b){
+    //     return a+b;
+    // }
+    // alert(add(20,30));
+    var movies = ["Avengers","Iron Man","Spiderman","Wonder Woman"];
+  movies.forEach(movie => {
+     alert(movie); 
+  });
+  for(var movie of movies){
+      var htmlList = "<ol>";
+     htmlList += "<li>" + movie + "</li>";
+    htmlList += "</ol>";
+    
+
+
+  }
+  document.write(htmlList);
+    </script>
+</body>
+</html>

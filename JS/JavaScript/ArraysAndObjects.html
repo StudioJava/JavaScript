@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function randomNumber(max){
+        return Math.floor(Math.random() * max) + 1;
+    }
+   
+    var i =0;
+    while(i < 10){
+        i++;
+        document.write(i + " = " + randomNumber(9) + "<br>");
+       
+    }
+    do{
+        var answer = prompt("continue loop?");
+    }while(answer != "yes");
+   
+
+    document.write("This is the last =" + i);
+    </script>
+</body>
+</html>
