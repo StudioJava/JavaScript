@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Two dimensional Array</title>
+</head>
+
+<body>
+	<script>
+	var playList = [
+		['I did it My Way','Frank Sinatra'],
+		['Respect', 'Aretha Franklin'],
+		['Imagine','John Lennon'],
+		['Born to Run','Bruce Springsten'],
+		['Louie Louie','The Kingsman'],
+		[]
+		
+		
+	];
+	
+	function printList(list){
+			var listHTML = '<ol>';
+			for(var i = 0; i < list.length; i++){
+				listHTML += '<li>' + list[i] + '</li>';
+			}
+			listHTML += '</ol>';
+			print(listHTML);
+		}
+	function print(message){
+		document.write(message);
+	}
+
+
+	</script>
+</body>
+</html>

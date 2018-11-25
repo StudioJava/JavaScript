@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>What is an array</title>
+</head>
+
+<body>
+	<script>
+		//Functions
+		function print (html){
+			document.write(html);
+		}
+		function loopArray (array){
+		for(var i = 0; i < array.length;i++){
+		document.write(array[i] + '<br>');
+		}
+		 }
+		
+		function addintToArray(array,item){
+			array.push(item);
+		}
+		
+		function printList(list){
+			var listHTML = '<ol>';
+			for(var i = 0; i < list.length; i++){
+				listHTML += '<li>' + list[i] + '</li>';
+			}
+			listHTML += '</ol>';
+			print(listHTML);
+		}
+		function removefirstItem(array){
+			array.shift();
+		}
+		function removeLastItem(array){
+			array.pop();
+		}
+		
+		var list = ['Milk','Tomatoes','Eggs'];
+		var students = ['Tim','Mary','Jon','Erik','Eddy'];
+		var daysInWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday', 'Friday','Saturday'];
+		
+		//Adding items to an array
+		list.push('Fruit','Meat');
+		addintToArray(list,'Butter');
+		list.push('Dog Food');
+
+		printList(list);
+		document.write('<hr>');
+		var playlist = [];
+		addintToArray(playlist,'Born to Run');
+		playlist.push('Loui Loui','Maybellene','I did it my Way','Respect','Imagine');
+				
+		printList(playlist);
+		playlist.unshift('Wild west','Help','Yellow Submarine');
+		document.write('<hr>');
+				
+		printList(playlist);
+		document.write('<hr>');
+		document.write('Removing item from list');
+		removeLastItem(playlist);
+		printList(playlist);
+		document.write('<hr>');
+		printList(students);
+		//Using the join Method
+		document.write('<hr>');
+		document.write('Using the join Method\n');
+		document.write(daysInWeek.join(', ' ));
+		document.write('<hr>');
+		document.write('Using the concat Method\n');
+		document.write(students.concat(daysInWeek));
+		document.write('<hr>');
+		document.write('Using index of method\n');
+		document.write(list.indexOf('Eggs'));
+		
+	
+	</script>
+</body>
+</html>
